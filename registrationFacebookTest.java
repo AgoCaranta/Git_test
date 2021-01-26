@@ -47,9 +47,9 @@ public class registrationFacebookTest {
         Select comboAño = new Select(año);
         comboAño.selectByValue("1980");
 
-        Thread.sleep(3000);
+        Thread.sleep(5000);
 
-        WebElement radio2 = driver.findElement(By.id("u_1_5"));
+        WebElement radio2 = driver.findElement(By.xpath("//*[@type='radio'and@value='2']"));
         radio2.click();
 
         driver.close();
